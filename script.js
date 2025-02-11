@@ -80,3 +80,13 @@ function handleNoClick() {
 function handleYesClick() {
     window.location.href = "yes_page.html";
 }
+
+<script>
+        const frames = ["💖", "❤️", "💕", "💞", "💘", "💓"]; // Different heart emojis
+        let index = 0;
+      
+        setInterval(() => {
+          document.title = frames[index] + " Valentine's Card";
+          index = (index + 1) % frames.length;
+        }, 500); // Change every 500ms
+    </script>
