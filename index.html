@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
+    <title>💖 Will You Be My Valentine?</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,5 +18,14 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        const frames = ["💖", "❤️", "💕", "💞", "💘", "💓"]; // Different heart emojis
+        let index = 0;
+      
+        setInterval(() => {
+          document.title = frames[index] + " Valentine's Card";
+          index = (index + 1) % frames.length;
+        }, 500); // Change every 500ms
+      </script>
 </body>
 </html>
